@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <title>
+
+  </title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.5.0/d3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <link rel="stylesheet" href="static/css/tachyons.css">
+
+</head>
+
+<body class="sans-serif">
+  <article class="cf ph3 ph5-ns pv5 flex">
+
+    <div class="fn fl-ns w-100-ns flex-column">
+      <div>
+      <div>
+      
+        <h1 class="f2 lh-title fw9 mb3 mt0 pt3 bt bw2 navy v-mid">
+        <img src="static/images/SampleLogo.svg"></img>
+        Sample Client's Visualizations
+      </h1>
+      </div>
+        <h2 class="f3 mid-gray lh-title">
+          Fork and Enjoy
+        </h2>
+
+        <p class="f5 lh-copy measure mt0-ns">
+          At Algorex Health, we often need to compose purpose built webpages to convey visual information.
+          This template provides a simple way to do that without the use of complicated frameworks (it's basically just
+          HTML, CSS, and JS) and can be served as a static site
+          on S3 or other place.
+        </p>
+        <h4 class="f5 mid-gray lh-title">Technologies used:</h4>
+        <ul><a href="http://tachyons.io/" class="b black link underline-hover">Tachyons:</a> is used to help the CSS
+          styling.
+        </ul>
+        <ul><a href="http://typescriptlang.com/" class="b black link underline-hover">TypeScript:</a> is used rather
+          than
+          javascript because it provides better developer expierence with the typing features. Edit <span
+            class="code">charts.ts</span> to add any visualizations that you need. You
+          can serve the data from <span class="code">static/data</span>
+        </ul>
+        <ul><a href="http://rollupjs.org/" class="b black link underline-hover">Rollup:</a> bundles all the code
+          you use in your typescript files so that you load them once.
+        </ul>
+        Don't forget to change the logo
+        <p class="f5 lh-copy measure mt0-ns">
+
+        </p>
+      </div>
+
+      <div id="vega_viz" class="w-100"></div>
+    </div>
+
+  </article>
+  <article class="cf ph3 ph5-ns pv5 flex-column">
+    <h2 class="f3 mid-gray lh-title db">
+      Map of US Counties by their Relative Size
+    </h2>
+    <div id="mapid" style="height: 500px; width: 800px;"></div>
+
+  </article>
+
+</body>
+<script src="dist/charts_bundle.js"></script>
+
+</html>

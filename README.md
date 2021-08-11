@@ -24,3 +24,8 @@ yo maps-vega-viz
 ```
 
 and follow the prompts. 
+
+
+If you build and run the project correctly You should see this. 
+
+<img width="596" alt="image" src="https://user-images.githubusercontent.com/20745904/129037794-3668b7eb-5ce6-4f4f-880c-a3b23fee6614.png">
